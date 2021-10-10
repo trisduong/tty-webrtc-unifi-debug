@@ -8,11 +8,11 @@ const unifi = require('node-unifiapi')
 
 app.use(cors())
 
-http.listen(3000, () => {
-    console.log("Application started and Listening on port 3000");
+http.listen(5001, "0.0.0.0", () => {
+    console.log("Application started and Listening on port 5001");
 });
 
-app.get("/", (req, res) => {
+app.get("/cli", (req, res) => {
     res.sendFile(__dirname + "/index.html");
 });
 
@@ -25,8 +25,8 @@ io.of('/pty').on('connect', function (socket) {
         username: "trisdv",
         password: "123456",
         site: "default",
-        debug: true,
-        debugNet: true
+        debug: false,
+        debugNet: false
     })
 
     let ssh = UniFi.connectSSH(
