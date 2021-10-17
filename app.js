@@ -21,9 +21,9 @@ app.get("/cli", (req, res) => {
         console.log('A user connected');
 
         let UniFi = new unifi({
-            baseUrl: "https://103.107.183.58:8443",
-            username: "trisdv",
-            password: "123456",
+            baseUrl: "test
+            username: "test",
+            password: "test",
             site: "default",
             debug: false,
             debugNet: false
