@@ -1,2 +1,3 @@
 = tty-webrtc-uniFi-node
 some code to make unifi debug mode work on another website. Work with unifi cloud controller.
+Use and modify some update from this lib: https://github.com/delian/node-unifiapi
